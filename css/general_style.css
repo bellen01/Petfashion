@@ -74,7 +74,16 @@ border-bottom: none;
 main,
 footer {
     border: 1px solid black;
-    background-color: beige;
+    
 }
 
+footer {
+    position: relative;
+}
+
+#social-icons {
+    position: center;
+    bottom: 10px;
+    right: 10px
+}
 
