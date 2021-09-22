@@ -1,0 +1,61 @@
+:root {
+    --navy: #0c1042;
+    --purple: #1b0c42;
+
+    --sand: #f2efea;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#container {
+    display: grid;
+    grid-template-rows: minmax(100px, auto) auto minmax(100px, auto);
+
+
+}
+header {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    
+
+}
+
+#icons {
+ position: absolute; 
+ right: 10px;
+ top: 10px;  
+
+}
+
+#logga {
+    font-family: 'marcellus SC', serif;
+    color: black;
+    
+}
+
+nav {
+    display: flex;
+    column-gap: 50px;  
+}
+
+
+a {
+  font-family: 'montserrat'; 
+  text-decoration: none;
+
+  
+}
+main,
+footer {
+    border: 1px solid black;
+    background-color: beige;
+}
+
+
