@@ -79,11 +79,23 @@ footer {
 
 footer {
     position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
-#social-icons {
-    position: center;
-    bottom: 10px;
-    right: 10px
+#follow {
+    font-size: 15px;
+    font-family: 'montserrat';
+    
+}
+
+#social {
+    position: absolute;
+    bottom: 30px;
+    right: 200px
 }
 
