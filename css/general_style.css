@@ -13,7 +13,7 @@
 
 #container {
     display: grid;
-    grid-template-rows: minmax(100px, auto) auto minmax(100px, auto);
+    grid-template-rows: minmax(120px, auto) auto minmax(100px, auto);
 
 
 }
@@ -25,15 +25,20 @@ header {
  position: absolute; 
  right: 10px;
  top: 10px;  
+ font-size: 20px;
 
+}
+
+.bi {
+    margin-right: 10px;
 }
 
 #logga {
     font-family: 'marcellus SC', serif;
     color: black;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-top: 25px;
     font-size: 30px;
 }
 
@@ -41,13 +46,31 @@ a {
     text-decoration: none;
     font-family: 'montserrat';
     text-transform: uppercase;
+
+    color: black;
 }
+
 
 nav {
     display: flex;
-    column-gap: 20px;
+    column-gap: 30px;
     justify-content: center;
+    font-size: 13px;
+
 }
+
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+#search:hover {
+border-bottom: none;
+}
+
 main,
 footer {
     border: 1px solid black;
