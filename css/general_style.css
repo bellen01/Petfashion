@@ -9,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 #container {
@@ -20,11 +19,6 @@
 }
 header {
     position: relative;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    
-
 }
 
 #icons {
@@ -37,20 +31,22 @@ header {
 #logga {
     font-family: 'marcellus SC', serif;
     color: black;
-    
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
 
 nav {
     display: flex;
-    column-gap: 50px;  
-}
-
-
-a {
-  font-family: 'montserrat'; 
-  text-decoration: none;
-
-  
+    column-gap: 20px;
+    justify-content: center;
 }
 main,
 footer {
