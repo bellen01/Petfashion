@@ -89,24 +89,31 @@ footer {
 
     .section1 {
         grid-column-start: 1;
-		grid-column-end: 4; 
-        
-        border: 1px solid black;
+		grid-column-end: 4;
+    
+        /*border: 1px solid black;*/
         height: 400px;
+
+        background-color: #1b0c42;
+
+        padding: 15px;
     }
 
     .section2 {
         grid-column-start: 1;
 		grid-column-end: 4;  
 
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         height: 100px;
 
         padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
 
         text-align: center;
 
-        background-color:rgb(201, 176, 147);
+        background-color:  #f2efea;
     }
 
     #container3 {
@@ -116,29 +123,31 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
 
-        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         
         column-gap: 40px;
         row-gap: 10px;
 
-        background-color:rgb(22, 22, 65);
+        background-color:#f2efea; 
+
     }
 
     .section3 {
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         height: 300px;
         width: 300px;
         
     }
 
     .section4 {
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         height: 300px;
         width: 300px;
     }
 
     .section5 {
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         height: 300px;
         width: 300px;
     }
