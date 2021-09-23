@@ -4,3 +4,167 @@
 
     --sand: #f2efea;
 }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: minmax(120px, auto) auto minmax(100px, auto);
+
+
+}
+header {
+    position: relative;
+}
+
+#icons {
+ position: absolute; 
+ right: 10px;
+ top: 10px;  
+ font-size: 20px;
+
+}
+
+.bi {
+    margin-right: 10px;
+}
+
+#logga {
+    font-family: 'marcellus SC', serif;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'montserrat';
+    text-transform: uppercase;
+
+    color: black;
+}
+
+
+nav {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    font-size: 13px;
+
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+#search:hover {
+border-bottom: none;
+}
+
+main,
+footer {
+    border: 1px solid black;
+    
+}
+
+#container2 {
+        display:grid;
+        grid-row: auto;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+          
+    }
+
+    .section1 {
+        grid-column-start: 1;
+		grid-column-end: 4; 
+        
+        border: 1px solid black;
+        height: 400px;
+    }
+
+    .section2 {
+        grid-column-start: 1;
+		grid-column-end: 4;  
+
+        border: 1px solid black;
+        height: 100px;
+
+        padding-top: 10px;
+
+        text-align: center;
+
+        background-color:rgb(201, 176, 147);
+    }
+
+    #container3 {
+        display:grid;
+        grid-row: auto;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+
+        padding: 20px;
+        
+        column-gap: 40px;
+        row-gap: 10px;
+
+        background-color:rgb(22, 22, 65);
+    }
+
+    .section3 {
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+        
+    }
+
+    .section4 {
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+    }
+
+    .section5 {
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+    }
+
+   
+
+        
+footer {
+    position: relative;
+    text-align: center;
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px; 
+}
+
+#follow {
+    font-size: 15px;
+    font-family: 'montserrat';
+    
+}
+
+#social {
+    position: absolute;
+    bottom: 30px;
+    right: 200px
+}
+
