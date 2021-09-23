@@ -26,6 +26,7 @@ body {
 
 header {
     position: relative;
+    border-bottom: 1px solid black;
 }
 
 #icons {
@@ -48,6 +49,16 @@ header {
     padding-bottom: 5px;
     padding-top: 25px;
     font-size: 30px;
+}
+h1 {
+    font-family: montserrat;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
 }
 
 a {
@@ -77,18 +88,12 @@ nav a:hover {
 border-bottom: none;
 }
 
-main,
-footer {
-    border: 1px solid black;
-    
-}
-
 footer {
     position: relative;
-    /* text-align: center; */
+    border-top: 1px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     flex-direction: column;
     row-gap: 10px;
@@ -98,6 +103,8 @@ address {
     display: flex;
     flex-direction: column;
     font-style: normal;
+    row-gap: 5px;
+    
 }
 
 address p {
@@ -109,7 +116,6 @@ address p {
 #logo-footer {
     display: grid;
     place-items: center;
-    justify-self: center;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -117,14 +123,18 @@ address p {
     font-size: 30px;
     background-color: rgb(22, 22, 65);
     color: white;
+    
 }
 
 #follow {
     font-size: 15px;
-    margin-bottom: 10px;
-    
+    margin-right: 10px;
+    text-align: center;
+
 }
 
 #social {
+    display: grid;
+    row-gap: 5px;
 }
 
