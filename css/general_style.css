@@ -1,8 +1,9 @@
 :root {
-    --navy: #0c1042;
-    --purple: #1b0c42;
-
+    --navy: rgb(22, 22, 65);
+    --dark: rgb(13, 13, 41);
+    --beige: rgb(201, 176, 147);
     --sand: #f2efea;
+
 }
 
 * {
@@ -11,12 +12,18 @@
     padding: 0;
 }
 
+body {
+    font-family: montserrat;
+    font-weight: 300;
+}
+
 #container {
     display: grid;
-    grid-template-rows: minmax(120px, auto) auto minmax(100px, auto);
+    grid-template-rows: minmax(120px, auto) auto minmax(120px, auto);
 
 
 }
+
 header {
     position: relative;
 }
@@ -33,6 +40,7 @@ header {
     margin-right: 10px;
 }
 
+
 #logga {
     font-family: 'marcellus SC', serif;
     color: black;
@@ -44,9 +52,6 @@ header {
 
 a {
     text-decoration: none;
-    font-family: 'montserrat';
-    text-transform: uppercase;
-
     color: black;
 }
 
@@ -61,6 +66,7 @@ nav {
 
 nav a {
     padding: 10px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
@@ -79,23 +85,46 @@ footer {
 
 footer {
     position: relative;
-    text-align: center;
-    display: flex;
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 10px;
 }
 
+address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+address p {
+    font-size: 13px;
+    display: inline;
+    font-style: normal;
+}
+
+#logo-footer {
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-family: Marcellus SC;
+    font-size: 30px;
+    background-color: rgb(22, 22, 65);
+    color: white;
+}
+
 #follow {
     font-size: 15px;
-    font-family: 'montserrat';
+    margin-bottom: 10px;
     
 }
 
 #social {
-    position: absolute;
-    bottom: 30px;
-    right: 200px
 }
 
