@@ -1,7 +1,46 @@
-main {
-    margin: 0 50px;
-}
-
 aside ul {
     list-style-type: none;
+}
+
+.product-nav-alt1 a:hover {
+    border-bottom: none;
+}
+
+#productpage-main-grid-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "textarea textarea"
+    "topmenu topmenu"
+    "sidebar products";
+    gap: 10px;
+}
+
+.page-intro {
+    grid-area: textarea;
+}
+
+.product-nav-alt1 {
+    grid-area: topmenu;
+}
+
+.product-filter {
+    grid-area: sidebar;
+}
+
+.product-container {
+    width: 100%;
+    grid-area: products;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product {
+    width: 30%;
+    
 }
