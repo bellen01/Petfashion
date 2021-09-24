@@ -50,6 +50,13 @@ aside ul {
     margin-bottom: 15px;
 }
 
+.product-nav-targetgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    row-gap: 3px;
+}
+
 .product-container {
     width: 100%;
     grid-area: products;
@@ -77,6 +84,7 @@ aside ul {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 #morepages a {
@@ -86,7 +94,3 @@ aside ul {
 #morepages a:hover {
     border-bottom: 1px solid black;
 }
-
-/* #morepages a:active {
-    border-bottom: 1px solid black;
-} */
