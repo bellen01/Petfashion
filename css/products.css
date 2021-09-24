@@ -44,6 +44,12 @@ aside ul {
     font-size: 13px;
 }
 
+#showproducts {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--sand);
+    margin-bottom: 15px;
+}
+
 .product-container {
     width: 100%;
     grid-area: products;
