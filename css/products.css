@@ -20,7 +20,7 @@ aside ul {
     "textarea textarea"
     "topmenu topmenu"
     "sidebar products"
-    "pagnation pagnation";
+    "pagination pagination";
     gap: 10px;
 }
 
@@ -42,6 +42,24 @@ aside ul {
     border-top: 1px solid var(--sand);
 }
 
+.filter-button {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--sand);
+}
+
+.filter-button button {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 30px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
 .product-filter {
     grid-area: sidebar;
     padding-right: 25px;
@@ -52,6 +70,7 @@ aside ul {
     padding-bottom: 10px;
     margin-bottom: 15px;
     border-bottom: 1px solid var(--sand);
+    /* font-weight: 400; */
 }
 
 #filter-brand {
@@ -59,6 +78,7 @@ aside ul {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--sand);
     margin-bottom: 15px;
+    /* font-weight: 400; */
 }
 
 .product-nav-targetgroup {
@@ -160,19 +180,19 @@ aside ul {
     font-size: 15px;
 }
 
-#pagnation {
-    grid-area: pagnation;
+#pagination {
+    grid-area: pagination;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-#pagnation a {
+#pagination a {
     padding: 20px;
 }
 
-#pagnation a:hover {
+#pagination a:hover {
     border-bottom: 1px solid black;
 }
 
@@ -193,5 +213,14 @@ aside ul {
 
     #productpage-main-grid-container {
         gap: 0px;
+    }
+
+    .product-nav-alt1 {
+        display: none;
+    }
+
+    .filter-button {
+        display: inline-block;
+        grid-area: topmenu;
     }
 }
