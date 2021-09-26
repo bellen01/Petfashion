@@ -16,7 +16,7 @@ aside ul {
     "textarea textarea"
     "topmenu topmenu"
     "sidebar products"
-    "more more";
+    "pagnation pagnation";
     gap: 10px;
 }
 
@@ -46,8 +46,8 @@ aside ul {
 
 #showproducts {
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--sand);
     margin-bottom: 15px;
+    border-bottom: 1px solid var(--sand);
 }
 
 .product-nav-targetgroup {
@@ -55,6 +55,7 @@ aside ul {
     flex-direction: column;
     margin-bottom: 15px;
     row-gap: 3px;
+
 }
 
 .product-container {
@@ -79,18 +80,38 @@ aside ul {
     font-size: 13px;
 }
 
-#morepages {
-    grid-area: more;
+#pagnation {
+    grid-area: pagnation;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-#morepages a {
+#pagnation a {
     padding: 20px;
 }
 
-#morepages a:hover {
+#pagnation a:hover {
     border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .product {
+        min-width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        min-width: 45%;
+    }
+
+    .product-filter {
+        display: none;
+    }
+
+    #productpage-main-grid-container {
+        gap: 0px;
+    }
 }
