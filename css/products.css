@@ -7,7 +7,11 @@ aside ul {
 }
 
 #productpage-main-grid-container {
-    width: 95%;
+    /* background-image: linear-gradient(white, var(--beige)); */
+    /* background-image: linear-gradient(white, var(--navy)); */
+    /* background-image: linear-gradient(white, var(--sand)); */
+    width: 100%;
+    padding: 0 5%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto 3fr;
@@ -69,15 +73,54 @@ aside ul {
 
 .product {
     width: 30%;
-    
+
+    /* Testar olika designer för produktboxarna */
+    padding: 15px; 
+    /* background-color: var(--sand); */
+    border: 1px solid var(--sand);
+    /* border: 1px solid var(--navy); */
 }
 
 .product img {
     width: 100%;
 }
 
-.product p {
+.product div {
     font-size: 13px;
+}
+
+.brand {
+    color: var(--navy);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.price {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.favorite-buy-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.favorite-buy-icons i {
+    font-size: 17px;
+    color: var(--navy);
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+.add-to-cart {
+    background-color: var(--navy);
+    color: var(--sand);
+    padding: 10px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
 }
 
 #pagnation {
