@@ -106,7 +106,7 @@ aside ul {
 }
 
 .favorite-buy-icons i {
-    font-size: 17px;
+    font-size: 18px;
     color: var(--navy);
     padding-left: 10px;
     margin: 0;
@@ -124,12 +124,23 @@ aside ul {
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
+    font-size: 13px;
 }
 
 .add-to-cart i {
     margin: 0;
     padding-left: 5px;
 }
+
+.heart {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 10px 10px 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+
 
 #pagnation {
     grid-area: pagnation;
