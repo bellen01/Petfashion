@@ -54,6 +54,13 @@ aside ul {
     border-bottom: 1px solid var(--sand);
 }
 
+#filter-brand {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--sand);
+    margin-bottom: 15px;
+}
+
 .product-nav-targetgroup {
     display: flex;
     flex-direction: column;
@@ -140,7 +147,18 @@ aside ul {
     border-radius: 5px;
 }
 
+.brand-favorite-alt {
+    display: flex;
+    justify-content: space-between;
+}
 
+/* Felsök imorgon varför font-size inte fungerar */
+.price-addtocart {
+    display: flex;
+    justify-content: space-between;
+    font-family: montserrat;
+    font-size: 15px;
+}
 
 #pagnation {
     grid-area: pagnation;
