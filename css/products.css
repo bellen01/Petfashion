@@ -204,6 +204,24 @@ aside ul {
     border-bottom: 1px solid black;
 }
 
+#loadmore-button {
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#loadmore-button button {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 30px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 960px) {
     .product {
         min-width: 45%;
@@ -230,5 +248,14 @@ aside ul {
     .filter-button {
         display: inline-block;
         grid-area: topmenu;
+    }
+
+    #pagination {
+        display: none;
+    }
+
+    #loadmore-button {
+        display: inline-block;
+        grid-area: pagination;
     }
 }
