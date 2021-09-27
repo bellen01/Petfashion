@@ -5,6 +5,10 @@
     --arrow-width: 3px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 #h1-wrapper {
     display: flex;
@@ -18,7 +22,7 @@
     margin: 16px 0 27px 0;
     padding-bottom: 2px;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
-    font-size: 32px;
+    font-size: 28px;
     /* text-transform: none; */
 }
 
@@ -33,6 +37,12 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+h3 {
+    font-family: 'playfair display';
+    font-size: 30px;
+
+}
+
 #container-main {
     background-color: rgb(22, 22, 65);
     padding: 0 9vw 9vh 9vw;
@@ -45,6 +55,81 @@ main {
     justify-content: center;
     row-gap: 20vh;
 }
+
+.close-popup {
+    display: none;
+}
+
+#work-contact {
+    display: none;
+    position: fixed;
+    top: 18vh;
+    width: 55vw;
+    height: 64vh;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 50;
+    padding: 60px 80px;
+}
+
+.bi-x {
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(199, 199, 199);
+}
+
+#work-contact-info {
+    flex: 1 0 25%;
+    border-right: 1px solid black;
+}
+
+#work-contact-text {
+margin-left: 70px;
+}
+
+#work-contact p {
+
+}
+
+.popup-work-open #work-contact {
+    display: flex;
+}
+
+.popup-work-open .close-popup {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+    cursor: pointer;
+}
+
+
+.popup-work-closed #work-contact,
+.popup-work-closed .close-popup {
+    display: none;
+}
+
+.close-popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 49;
+    background-color: violet;
+
+}
+
+#work-contact {
+    height: 70vh;
+    width: 70vw;
+    background-color: white;
+}
+
+
 
 .info {
     position: relative;
@@ -66,7 +151,7 @@ main {
     /* padding: 20px; */
     text-transform: uppercase;
     font-family: 'open sans';
-    font-size: 11px;
+    font-size: 11.5px;
     font-weight: 600;
     letter-spacing: 3px;
     text-align: right;
@@ -127,7 +212,6 @@ main {
     flex-grow: 1;
     border-right: var(--arrow-width) solid var(--arrow);
 }
-
 
 .arrow-down {
     position: relative;
@@ -202,7 +286,8 @@ main {
     letter-spacing: 1.3px;
     text-transform: uppercase;
     row-gap: 4.5px;
-    padding-left: 5px;
+    padding-left: 3px;
+    cursor: pointer;
 }
 
 

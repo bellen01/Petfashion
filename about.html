@@ -35,12 +35,25 @@
             </nav>
         </header>
         <!-- ----------------------- ABOUT ----------------------- -->
+        <section id="work-contact">
+            <i onclick="minfunktion()" class="bi bi-x"></i>
+            <section id="work-contact-info">
+                Social icons
+            </section>
+            <section id="work-contact-text">
+                <h3>Join our team</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia quidem cupiditate delectus modi iste ullam molestias ipsam sit, natus eaque non quaerat dolorum, debitis facere reprehenderit ab eveniet sequi ducimus?</p>
+            </section>
+
+        </section>
+        <div onclick="minfunktion()" class="close-popup"></div>
         <div id="container-main">
             <div id="h1-wrapper">
                 <h1 id="h1-about">About</h1>
             </div>
             <main>
-                <section class="info">
+                <!-- -------------- SECTION 1 START -------------- -->
+                <section class="info" id="filosofi">
                     <section class="quote">“A life lived in love will <br>never be dull.”</section>
                     <section class="work">
                        + Shop <br>
@@ -49,9 +62,9 @@
                     <section class="info-content">
                         <div class="arrow-about">
     
-                            <div class="arrow-down">
+                            <a href="#miljo" class="arrow-down">
                                 <div class="line-2"></div>
-                            </div>
+                            </a>
                         </div>
                         <section class="info-content-2">
                             <img src="img-about/im-319286.jpg" alt="" class="info-img">
@@ -69,25 +82,26 @@
                 </section>
                 <section class="large-img">
                     <h2>Filosofi</h2>
-                    <div class="fyrkant">
+                    <div class="fyrkant" onclick="minfunktion()">
                         <p>Join our</p>
-                        <!-- <i class="bi bi-arrow-right-circle"></i> -->
                         <p>team at</p>
                         <p>FfP <i class="bi bi-arrow-right"></i></p>  
                     </div>
                 </section>
-                <section class="info">
+                <!-- -------------- SECTION 2 START -------------- -->
+                <section class="info" id="miljo">
                     <section class="work">
                        + Shop <br>
                        products
                     </section>
                     <section class="info-content">
                         <div class="arrow-about">
-                            <div class="arrow-up">
+                            <a href="#filosofi" class="arrow-up">
                                 <div class="line-1"></div>
-                            </div>                            <div class="arrow-down">
+                            </a>                            
+                            <a href="#om-oss" class="arrow-down">
                                 <div class="line-2"></div>
-                            </div>
+                            </a>
                         </div>
                         <section class="info-content-2">
                             <img src="img-about/im-319286.jpg" alt="" class="info-img">
@@ -104,25 +118,24 @@
                     </section>
                 </section>
                 <section class="large-img">
-                    <h2>Filosofi</h2>
-                    <div class="fyrkant">
+                    <h2>Climate</h2>
+                    <div class="fyrkant" onclick="minfunktion()">
                         <p>Join our</p>
                         <p>team at</p>
                         <p>FfP <i class="bi bi-arrow-right"></i></p>  
                     </div>
                 </section>
-                <section class="info">
+                <!-- -------------- SECTION 3 START -------------- -->
+                <section class="info" id="om-oss">
                     <section class="work">
                        + Shop <br>
                        products
                     </section>
                     <section class="info-content">
                         <div class="arrow-about">
-                            <div class="arrow-up">
+                            <a href="#miljo" class="arrow-up">
                                 <div class="line-1"></div>
-                            </div>                            <div class="arrow-down">
-                                <div class="line-2"></div>
-                            </div>
+                            </a>                            
                         </div>
                         <section class="info-content-2">
                             <img src="img-about/im-319286.jpg" alt="" class="info-img">
@@ -139,8 +152,8 @@
                     </section>
                 </section>
                 <section class="large-img">
-                    <h2>Filosofi</h2>
-                    <div class="fyrkant">
+                    <h2>About</h2>
+                    <div class="fyrkant" onclick="minfunktion()">
                         <p>Join our</p>
                         <p>team at</p>
                         <p>FfP <i class="bi bi-arrow-right"></i></p>  
@@ -171,6 +184,19 @@
             </div>
         </footer>
     </div>
+    <!-- --------------- JAVASCRIPT --------------- -->
+
+    <script>
+        function minfunktion() {
+            var className = document.body.getAttribute("class");
+            if(className == "popup-work-open") {
+                document.body.className = "popup-work-closed";
+            }
+            else{
+                document.body.className = "popup-work-open";
+            }
+          }
+        </script>
 
 </body>
 
