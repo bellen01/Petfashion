@@ -6,10 +6,36 @@ aside ul {
     border-bottom: none;
 }
 
-#productpage-main-grid-container {
+#heading-section {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "textarea"
+    "topmenu";
+    gap: 10px;
+}
+
+#productpage-main-grid-container-alt2 {
     /* background-image: linear-gradient(white, var(--beige)); */
     /* background-image: linear-gradient(white, var(--navy)); */
     /* background-image: linear-gradient(white, var(--sand)); */
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sidebar products"
+    "pagination pagination";
+    gap: 10px;
+}
+
+/* #productpage-main-grid-container {
     width: 100%;
     padding: 0 5%;
     margin: 0 auto;
@@ -22,7 +48,7 @@ aside ul {
     "sidebar products"
     "pagination pagination";
     gap: 10px;
-}
+} */
 
 .page-intro {
     grid-area: textarea;
@@ -58,6 +84,10 @@ aside ul {
     border: none;
     border-radius: 5px;
     font-size: 13px;
+}
+
+.filter-button i {
+    margin: 0;
 }
 
 .product-filter {
@@ -101,13 +131,13 @@ aside ul {
     width: 100%;
     grid-area: products;
     display: flex;
-    gap: 20px;
+    row-gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .product {
-    width: 30%;
+    width: 31%;
 
     /* Testar olika designer för produktboxarna */
     padding: 15px; 
@@ -212,8 +242,8 @@ aside ul {
 }
 
 #loadmore-button button {
-    background-color: var(--sand);
-    color: var(--navy);
+    background-color: var(--navy);
+    color: var(--sand);
     padding: 10px 30px;
     font-family: montserrat;
     text-transform: uppercase;
@@ -237,7 +267,7 @@ aside ul {
         display: none;
     }
 
-    #productpage-main-grid-container {
+    #productpage-main-grid-container-alt2 {
         gap: 0px;
     }
 
