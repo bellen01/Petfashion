@@ -80,24 +80,35 @@ footer {
 
 #container2 {
         display:grid;
-        grid-row: auto;
+        
         
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
 
         background-color: #0c1042;
+
     }
 
     .section1 {
         grid-column-start: 1;
 		grid-column-end: 4;
     
-        border: 1px solid black;
+        justify-content: center;
+    
 
-        
+        border: 1px solid black;
         
         padding: 15px;
-      
+
+        background-color: red;
+
+       
+       
+    }
+
+    .section1 img {
+        object-fit: cover;
+        
     }
     
     .section2 {
@@ -139,9 +150,10 @@ footer {
         padding-left: 75px;
         
 
-        background-color: #0c1042;
+        background-color: #f2efea;
         color: #f2efea;
 
+        
     }
 
     p {
@@ -151,18 +163,16 @@ footer {
 
     .section3 {
         height: 300px;
-        width: 300px;   
+        width: 300px; 
+        
+       
     }
 
-    .section4 {
-        height: 300px;
-        width: 300px;
+    .section3 img {
+        
+        object-fit: cover;
     }
-
-    .section5 {
-        height: 300px;
-        width: 300px;
-    }
+    
 
     
 
