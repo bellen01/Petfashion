@@ -74,7 +74,7 @@ aside ul {
 }
 
 #filter-brand {
-    margin-top: 10px;
+    margin-top: 40px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--sand);
     margin-bottom: 15px;
@@ -88,6 +88,14 @@ aside ul {
     row-gap: 3px;
 
 }
+
+/* .product-nav-targetgroup input:checked {
+    background-color: gray;
+} */
+
+/* .when-checked input:checked {
+        background-color: gray;
+} */
 
 .product-container {
     width: 100%;
@@ -132,12 +140,12 @@ aside ul {
     justify-content: flex-end;
 }
 
-.favorite-buy-icons i {
+/* .favorite-buy-icons i {
     font-size: 18px;
     color: var(--navy);
     padding-left: 10px;
     margin: 0;
-}
+} */
 
 .add-to-cart {
     text-align: right;
@@ -167,18 +175,18 @@ aside ul {
     border-radius: 5px;
 }
 
-.brand-favorite-alt {
+/* .brand-favorite-alt {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* Felsök imorgon varför font-size inte fungerar */
-.price-addtocart {
+/* .price-addtocart {
     display: flex;
     justify-content: space-between;
     font-family: montserrat;
     font-size: 15px;
-}
+} */
 
 #pagination {
     grid-area: pagination;
