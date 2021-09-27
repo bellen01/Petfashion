@@ -80,7 +80,7 @@ footer {
 
 #container2 {
         display:grid;
-        
+        grid-row: auto;
         
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -92,24 +92,19 @@ footer {
     .section1 {
         grid-column-start: 1;
 		grid-column-end: 4;
-    
-        justify-content: center;
-    
 
         border: 1px solid black;
         
         padding: 15px;
 
         background-color: red;
-
-       
        
     }
 
-    .section1 img {
+    /*.section1 img {
         object-fit: cover;
         
-    }
+    }*/
     
     .section2 {
         grid-column-start: 1;
@@ -142,7 +137,7 @@ footer {
 
         display: flex;
         flex-flow: row nowrap;
-        height: 100%;
+        
 
         column-gap: 100px;
         padding: 30px;
@@ -150,7 +145,7 @@ footer {
         padding-left: 75px;
         
 
-        background-color: #f2efea;
+        background-color: red;
         color: #f2efea;
 
         
