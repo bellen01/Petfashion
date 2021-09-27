@@ -12,12 +12,11 @@
     background-color: var(--sand);
     border: 5px solid var(--navy);
     width: 300px;
-    height: 400px;
+    height: 370px;
     justify-self: center;
 
 }
 .img{
-    border: 3px solid var(--navy);
     width: 250px;
     align-self: center;
     margin-top: 25px;
@@ -26,11 +25,71 @@ p{
     margin-left: 22px;
     margin-top: 20px;  
 }
+
 .stars{
     width: 100px;
     margin-left: 20px;
     margin-top: 10px;
 }
+.text{
+    margin-top:10px;
+    margin-right: 22px;
+    
+}
+.form-r{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border: 5px solid var(--navy);
+    background-color: var(--sand);
+    grid-column: 2/3;
+}
+#fname{
+    align-self: center;
+    text-decoration: underline;
+}
+
+.rate {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: black;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: black;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: black;
+}
+
+
 @media screen and (max-width: 960px) and (min-width: 768px){
 #container-r{
     grid-template-columns: repeat(2, 1fr);
