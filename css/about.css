@@ -1,4 +1,5 @@
 :root {
+    --dark-beige: rgb(128, 122, 107);
     --fyrkant-size: 120px;
 
     --arrow: rgb(94, 94, 126);
@@ -37,10 +38,26 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+#h2-about {
+    right: 68%;
+}
+
 h3 {
     font-family: 'playfair display';
     font-size: 30px;
+    margin-bottom: 35px;
+    
+}
 
+h4 {
+    text-transform: uppercase;
+    color: var(--dark-beige);
+    margin-bottom: 20px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
 }
 
 #container-main {
@@ -63,13 +80,12 @@ main {
 #work-contact {
     display: none;
     position: fixed;
-    top: 18vh;
+    align-items: stretch;
+    top: 23%;
     width: 55vw;
-    height: 64vh;
     margin: 0 auto;
     background-color: white;
     z-index: 50;
-    padding: 60px 80px;
 }
 
 .bi-x {
@@ -82,16 +98,34 @@ main {
 }
 
 #work-contact-info {
+    display: grid;
     flex: 1 0 25%;
-    border-right: 1px solid black;
+    background-color: var(--sand);
+    padding: 72px 0 80px 47px;
+    align-content: space-between;
 }
+
+#work-contact-info > section {
+    display: grid;
+    row-gap: 8px;
+
+}
+
+#work-contact-info .bi {
+    color: var(--dark-beige);
+}
+
+
+#work-contact > section:first-of-type {
+    /* border-right: 1px solid rgb(207, 207, 207); */
+    padding-right: 50px;
+
+}
+
 
 #work-contact-text {
-margin-left: 70px;
-}
-
-#work-contact p {
-
+    font-size: 16px;
+    padding: 67px 80px 80px 68px;
 }
 
 .popup-work-open #work-contact {
@@ -122,14 +156,6 @@ margin-left: 70px;
     background-color: violet;
 
 }
-
-#work-contact {
-    height: 70vh;
-    width: 70vw;
-    background-color: white;
-}
-
-
 
 .info {
     position: relative;
@@ -250,7 +276,6 @@ margin-left: 70px;
 .info-img {
     width: 201px;
     height: 270px;
-    object-fit: cover;
     margin-bottom: 15px;
 }
 
@@ -266,8 +291,6 @@ margin-left: 70px;
     position: relative;
     height: 750px;
     background-color: burlywood;
-    background-image: url('../img-about/karsten-winegeart-Y0nU6dqDCbY-unsplash.jpg');
-    background-size: cover;
 }
 
 .fyrkant {
