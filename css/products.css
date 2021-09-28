@@ -168,9 +168,13 @@
     font-size: 13px;
 }
 
+.add-to-cart button:hover {
+    cursor: pointer;
+}
+
 .add-to-cart i {
     margin: 0;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     font-size: 13px;
 }
 
