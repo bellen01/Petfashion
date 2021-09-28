@@ -12,7 +12,7 @@
     background-color: var(--sand);
     border: 5px solid var(--navy);
     width: 315px;
-    height: 370px;
+    height: 390px;
     justify-self: center;
 
 }
@@ -34,6 +34,7 @@ p{
 .text{
     margin-top:10px;
     margin-right: 22px;
+    line-height: 1.6;
     
 }
 .container2{
@@ -45,7 +46,7 @@ p{
     display: flex;
     flex-direction: column;
     width: 600px;
-    height: 450px;
+   height: 530px;
     margin-bottom: 45px;
     border: 5px solid var(--navy);
     background-color: var(--sand);
@@ -57,14 +58,19 @@ p{
 }
 #fname,
 .input-text,
-#comment{
+#comment,
+input[type="submit"]{
    align-self: center;
-   
-   padding: 7px;
+   margin: 7px;
     
 }
-input[type="text"]{
+input[type="text"],
+input[type="submit"]
+{
     font-family: montserrat;
+    width: 150px;
+    height: 40px;
+
 }
 
 .rate {
