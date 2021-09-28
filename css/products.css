@@ -20,9 +20,6 @@ aside ul {
 }
 
 #productpage-main-grid-container-alt2 {
-    /* background-image: linear-gradient(white, var(--beige)); */
-    /* background-image: linear-gradient(white, var(--navy)); */
-    /* background-image: linear-gradient(white, var(--sand)); */
     width: 100%;
     padding: 0 5%;
     margin: 0 auto;
@@ -138,12 +135,8 @@ aside ul {
 
 .product {
     width: 31%;
-
-    /* Testar olika designer för produktboxarna */
     padding: 15px; 
-    /* background-color: var(--sand); */
     border: 1px solid var(--sand);
-    /* border: 1px solid var(--navy); */
 }
 
 .product img {
@@ -169,13 +162,6 @@ aside ul {
     display: flex;
     justify-content: flex-end;
 }
-
-/* .favorite-buy-icons i {
-    font-size: 18px;
-    color: var(--navy);
-    padding-left: 10px;
-    margin: 0;
-} */
 
 .add-to-cart {
     text-align: right;
@@ -204,19 +190,6 @@ aside ul {
     font-size: 13px;
     border-radius: 5px;
 }
-
-/* .brand-favorite-alt {
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* Felsök imorgon varför font-size inte fungerar */
-/* .price-addtocart {
-    display: flex;
-    justify-content: space-between;
-    font-family: montserrat;
-    font-size: 15px;
-} */
 
 #pagination {
     grid-area: pagination;
@@ -263,7 +236,9 @@ aside ul {
         min-width: 45%;
     }
 
-    .product-filter {
+    .product-filter,
+    .product-nav-alt1,
+    #pagination {
         display: none;
     }
 
@@ -271,17 +246,9 @@ aside ul {
         gap: 0px;
     }
 
-    .product-nav-alt1 {
-        display: none;
-    }
-
     .filter-button {
         display: inline-block;
         grid-area: topmenu;
-    }
-
-    #pagination {
-        display: none;
     }
 
     #loadmore-button {
