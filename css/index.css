@@ -84,9 +84,9 @@ footer {
         
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-
-
+        
     }
+
     
     .section2 {
         grid-column-start: 1;
@@ -94,17 +94,12 @@ footer {
 
         height: 100px;
         padding-top: 10px;
-
+        
         text-align: center;
-
-        background-color:  #f2efea;
 
         font-family: 'marcellus' sans-serif;
         
-
-        border-bottom: 5px solid white;
-
-        
+        border-bottom: 1px solid var(--navy);
     }
 
     #container3 {
@@ -112,14 +107,11 @@ footer {
         flex-flow: row nowrap;
         
         column-gap: 100px;
+       
         padding: 30px;
 
         padding-left: 75px;
-        
-        background-color:rgb(201, 176, 147);
-        color: black;
-        
-        
+            
     }
 
     p {
