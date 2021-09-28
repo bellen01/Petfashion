@@ -62,10 +62,23 @@ img {
 
 #container-main {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     background-color: rgb(22, 22, 65);
     padding: 0 40px 15vh 40px;
+    
+}
 
+h1 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.page-intro {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 55px;
+    max-width: 690px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 main {
@@ -76,6 +89,7 @@ main {
 }
 
 main > div {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -90,8 +104,9 @@ main > div {
 }
 
 .work {
-    justify-self: end;
-    align-self: start;
+    position: absolute;
+    top: 37px;
+    right: 50px;
     color: var(--arrow);
     text-transform: uppercase;
     font-family: 'open sans';
@@ -102,8 +117,10 @@ main > div {
 }
 
 .share-about {
-    justify-self: start;
-    align-self: end;
+    position: absolute;
+    bottom: 37px;
+    left: 50px;
+    /* padding: 37px 50px; */
 }
 
 .share-about .bi,
@@ -140,6 +157,7 @@ main > div {
 } */
 
 h5 {
+    display: none;
     position: relative;
     left: -10px;
     grid-column: 1 / -1;
@@ -266,8 +284,9 @@ h5 {
     position: fixed;
     align-items: stretch;
     top: 23%;
-    max-width: 800px;
-    margin: 0 auto;
+    min-width: 800px;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-color: white;
     z-index: 50;
     justify-content: space-between;
@@ -346,6 +365,10 @@ h5 {
     #container-main {
     }
 
+    h5 {
+        display: block;
+    }
+
     main {
         grid-template: repeat(3, 650px) / 1fr;;
     }
@@ -363,9 +386,9 @@ h5 {
         flex-direction: row-reverse;
     }
     
-        .info {
-            padding: 20px 40px 70px 40px;
-        }
+    .info {
+        padding: 20px 40px 70px 40px;
+    }
 
     .info-content {
         column-gap: 30px;
@@ -397,10 +420,6 @@ h5 {
     h2 {
         display: none;
     }
-    
-    .share-about {
-        display: none;
-    }
 
     .large-img {
         flex: 0 0 32%;
@@ -417,6 +436,17 @@ h5 {
         background-color: var(--dark);
     } */
 
+    .share-about {
+        bottom: 22px;
+        left: 32px;
+        text-shadow: 1px 1px 15px black;
+        /* padding: 37px 50px; */
+    }
+    
+    .share-about .bi,
+    .share-about p {
+        color: rgb(196, 196, 219);
+    }
 
 }
 
@@ -468,7 +498,7 @@ h5 {
         justify-content: center;
         grid-template: auto / 1fr;
         align-items: center;
-        padding: 55px 50px 100px 50px;
+        padding: 35px 50px 105px 50px;
     }
 
     /* .info {
@@ -484,19 +514,6 @@ h5 {
         display: none;
     }
 
-    .work {
-        position: absolute;
-        bottom: 20px;
-        left: 40px;
-        text-align: left;
-    }
-
-    .share-about {
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        right: 40px;
-    }
     
     .share-about p {
         display: none;
@@ -512,6 +529,19 @@ h5 {
 
     .fyrkant {
         display: none;
+    }
+
+    .share-about {
+        bottom: 25px;
+        left: 40px;
+        text-shadow: 1px 1px 15px black;
+        /* padding: 37px 50px; */
+    }
+
+    .work {
+        top: auto;
+        right: 40px;
+        bottom: 25px;
     }
     
 }
