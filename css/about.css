@@ -532,16 +532,16 @@ h5 {
     }
 
     .share-about {
-        bottom: 25px;
-        left: 40px;
+        bottom: 30px;
+        left: 45px;
         text-shadow: 1px 1px 15px black;
         /* padding: 37px 50px; */
     }
 
     .work {
         top: auto;
-        right: 40px;
-        bottom: 25px;
+        right: 45px;
+        bottom: 30px;
     }
     
 }
