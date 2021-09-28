@@ -1,0 +1,249 @@
+
+#first-section {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "textarea"
+    "topmenu";
+    gap: 10px;
+}
+
+.page-intro {
+    grid-area: textarea;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 20px 40px 20px;
+    font-size: 16px;
+}
+
+.page-intro h1 {
+    color: var(--navy);
+}
+
+.product-menu {
+    grid-area: topmenu;
+    padding: 20px 0;
+    border-top: 1px solid var(--sand);
+}
+
+.product-menu a:hover {
+    border-bottom: none;
+}
+
+.filter-button {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--sand);
+}
+
+.filter-button button {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 30px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.filter-button i {
+    margin: 0;
+}
+
+#product-grid-container {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sidebar products"
+    "pagination pagination";
+    gap: 10px;
+}
+
+/* #productpage-main-grid-container {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "textarea textarea"
+    "topmenu topmenu"
+    "sidebar products"
+    "pagination pagination";
+    gap: 10px;
+} */
+
+
+.product-filter {
+    grid-area: sidebar;
+    padding-right: 25px;
+    font-size: 13px;
+}
+
+#showproducts {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--sand);
+    text-transform: uppercase;
+    /* font-weight: 400; */
+}
+
+.product-filter-choices {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    row-gap: 3px;
+}
+
+#filter-gender {
+    margin-top: 10px;
+}
+
+#filter-brand {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--sand);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+}
+
+.product-container {
+    width: 100%;
+    grid-area: products;
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 31%;
+    padding: 15px; 
+    border: 1px solid var(--sand);
+}
+
+.product img {
+    width: 100%;
+}
+
+.product div {
+    font-size: 13px;
+}
+
+.brand-text {
+    color: var(--navy);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.price {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    text-align: right;
+}
+
+.add-to-cart button {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.add-to-cart i {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.heart {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 10px 10px 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+#pagination {
+    grid-area: pagination;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#pagination a {
+    padding: 20px;
+}
+
+#pagination a:hover {
+    border-bottom: 1px solid black;
+}
+
+#loadmore-button {
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#loadmore-button button {
+    background-color: var(--navy);
+    color: var(--sand);
+    padding: 10px 30px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .product {
+        min-width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        min-width: 45%;
+    }
+
+    .product-filter,
+    .product-menu,
+    #pagination {
+        display: none;
+    }
+
+    #product-grid-container {
+        gap: 0px;
+    }
+
+    .filter-button {
+        display: inline-block;
+        grid-area: topmenu;
+    }
+
+    #loadmore-button {
+        display: inline-block;
+        grid-area: pagination;
+    }
+}
