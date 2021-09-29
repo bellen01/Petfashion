@@ -1,4 +1,5 @@
 #container-r{
+    
     background-image: linear-gradient(white,var(--beige));
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,15 +12,14 @@
     flex-direction: column;
     background-color: var(--sand);
     border: 5px solid var(--navy);
-    width: 315px;
-    height: 390px;
+    width: 80%;
     justify-self: center;
+    padding: 20px;
 
 }
 .img{
-    width: 270px;
+    width: 100%;
     align-self: center;
-    margin-top: 25px;
 }
 p{
     margin-left: 22px;
@@ -34,6 +34,7 @@ p{
 .text{
     margin-top:10px;
     margin-right: 22px;
+    padding-bottom: 20px;
     line-height: 1.6;
     
 }
@@ -46,7 +47,7 @@ p{
     display: flex;
     flex-direction: column;
     width: 600px;
-   height: 530px;
+    height: 530px;
     margin-bottom: 45px;
     border: 5px solid var(--navy);
     background-color: var(--sand);
@@ -119,9 +120,11 @@ input[type="submit"]
 }
 
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     #container-r{
         grid-template-columns: 1fr;
     }
-    
+    .form-r {
+        margin: 0 20px 30px 20px;
+    }
     }
