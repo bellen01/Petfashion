@@ -37,7 +37,7 @@
         </header>
         <main>
             <!-- <main id="productpage-main-grid-container"> -->
-            <div id="heading-section">
+            <div id="first-section">
                 <section class="page-intro">
                     <h1>Our products</h1>
                     <p>
@@ -54,7 +54,8 @@
                         We would even go so far as to promise that you won't find anything better anywhere else.
                     </p>
                 </section>
-                <nav class="product-nav-alt1">
+
+                <nav class="product-menu">
                     <a href="">All products</a>
                     <a href="">Collars</a>
                     <a href="">Jackets</a>
@@ -66,10 +67,11 @@
                     <button>Filter <i class="bi bi-filter-left"></i></button>
                 </div>
             </div>
-            <div id="productpage-main-grid-container-alt2">
+
+            <div id="product-grid-container">
                 <section class="product-filter">
-                    <div id="showproducts">SHOW PRODUCTS FOR:</div>
-                    <aside class="product-nav-targetgroup">
+                    <div id="showproducts">Show products for:</div>
+                    <aside class="product-filter-choices">
                         <div>
                             <input type="checkbox" name="chihuahua" id="chihuahua" value="chihuahua">
                             <label for="chihuahua">Chihuahua</label>
@@ -95,7 +97,7 @@
                             <label for="other">Other</label>
                         </div>
 
-                        <div id="gender">
+                        <div id="filter-gender">
                             <div>
                                 <input type="checkbox" name="girl" id="girl" value="girl">
                                 <label for="girl">Girl</label>
@@ -110,7 +112,7 @@
                             </div>
                         </div>
 
-                        <div id="filter-brand">BRAND:</div>
+                        <div id="filter-brand">Brand:</div>
                         <div>
                             <input type="checkbox" name="adidas" id="adidas" value="adidas">
                             <label for="adidas">Adidas</label>
@@ -141,69 +143,76 @@
                         </div>
                     </aside>
                 </section>
+
                 <section class="product-container">
                     <article class="product">
                         <img src="img/product-img/jacket-alexandra-novitskaya-O6EhbndNhpA-unsplash.jpg" alt="">
-                        <div class="brand">Gucci</div>
+                        <div class="brand-text">Gucci</div>
                         <div>Green jacket</div>
                         <div class="price">1 990 kr</div>
                         <div class="add-to-cart">
-                            <a href="" class="heart"><i class="bi bi-suit-heart"></i></a>
+                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
+                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
                             <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
                         <img src="img/product-img/jacket-charles-deluvio-lJJlaUWYrPE-unsplash.jpg" alt="">
-                        <div class="brand">Dior</div>
+                        <div class="brand-text">Dior</div>
                         <div>Yellow raincoat</div>
-                        <div class="price">1 990 kr</div>
+                        <div class="price">990 kr</div>
                         <div class="add-to-cart">
-                            <a href="" class="heart"><i class="bi bi-suit-heart"></i></a>
+                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
+                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
                             <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
                         <img src="img/product-img/jacket-karsten-winegeart-sytld_poGLc-unsplash.jpg" alt="">
-                        <div class="brand">Adidas</div>
+                        <div class="brand-text">Adidas</div>
                         <div>Black sweatshirt</div>
-                        <div class="price">1 990 kr</div>
+                        <div class="price">1 299 kr</div>
                         <div class="add-to-cart">
-                            <a href="" class="heart"><i class="bi bi-suit-heart"></i></a>
+                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
+                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
                             <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
                         <img src="img/product-img/jacket-karsten-winegeart-rs_x0VjRY0U-unsplash.jpg" alt="">
-                        <div class="brand">Prada</div>
+                        <div class="brand-text">Prada</div>
                         <div>Gold necklace</div>
-                        <div class="price">1 990 kr</div>
+                        <div class="price">2 500 kr</div>
                         <div class="add-to-cart">
-                            <a href="" class="heart"><i class="bi bi-suit-heart"></i></a>
+                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
+                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
                             <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
                         <img src="img/product-img/jacket-karsten-winegeart-Qb7D1xw28Co-unsplash.jpg" alt="">
-                        <div class="brand">Balenciaga</div>
+                        <div class="brand-text">Balenciaga</div>
                         <div>Banana pyjamas</div>
-                        <div class="price">1 990 kr</div>
+                        <div class="price">1 000 kr</div>
                         <div class="add-to-cart">
-                            <a href="" class="heart"><i class="bi bi-suit-heart"></i></a>
+                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
+                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
                             <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
                         <img src="img/product-img/glasses-charles-deluvio-pOUA8Xay514-unsplash.jpg" alt="">
-                        <div class="brand">Louis Vuitton</div>
+                        <div class="brand-text">Louis Vuitton</div>
                         <div>Trendy glasses</div>
                         <div class="price">1 990 kr</div>
                         <div class="add-to-cart">
-                            <a href="" class="heart"><i class="bi bi-suit-heart"></i></a>
+                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
+                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
                             <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
@@ -216,10 +225,9 @@
                     <a href=""><i class="bi bi-arrow-right-short"></i></a>
                 </div>
 
-                <div id="loadmore-button">
+                <div class="loadmore-button">
                     <button>Load more products</button>
                 </div>
-
             </div>
         </main>
         <footer>
