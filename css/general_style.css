@@ -17,14 +17,15 @@ body {
     font-weight: 300;
 }
 
-#container {
+/* #container {
     display: grid;
     grid-template-rows: minmax(120px, auto) auto minmax(120px, auto);
 
 
-}
+} */
 
 header {
+    min-height: 120px;
     position: relative;
     border-bottom: 1px solid black;
 }
@@ -66,14 +67,6 @@ a {
     color: black;
 }
 
-
-/* nav {
-    display: flex;
-    column-gap: 30px;
-    justify-content: center;
-    font-size: 13px;
-
-} */
 nav{
    text-align:center; 
    font-size: 13px;
@@ -96,6 +89,7 @@ border-bottom: none;
 }
 
 footer {
+    height: 120px;
     position: relative;
     border-top: 1px solid black;
     display: grid;
