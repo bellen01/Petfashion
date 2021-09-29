@@ -21,34 +21,32 @@
     width: 100%;
     align-self: center;
 }
-p{
-    margin-left: 22px;
+.name{
+    margin-left: 17px;
     margin-top: 20px;  
 }
 
 .stars{
     width: 100px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 10px;
 }
 .text{
-    margin-top:10px;
-    margin-right: 22px;
-    padding-bottom: 20px;
+    margin:10px 22px 20px 15px;
     line-height: 1.6;
     
 }
 .container2{
-    display: grid;
+    /* display: grid; */
     background-color: var(--beige);
 }
 .form-r{
-    justify-self: center;
+    /* justify-self: center; */
     display: flex;
     flex-direction: column;
     width: 60%;
     height: 530px;
-    margin-bottom: 45px;
+    margin: auto;
     border: 5px solid var(--navy);
     background-color: var(--sand);
 }
@@ -72,6 +70,9 @@ input[type="submit"]
     width: 150px;
     height: 40px;
 
+}
+textarea{
+    width: 90%;
 }
 
 .rate {
@@ -126,6 +127,10 @@ input[type="submit"]
     }
     .form-r {
         margin: 0 20px 30px 20px;
+    }
+    .form-r p{
+        font-size: 20px;
+        margin-right: 20px;
     }
     
     }
