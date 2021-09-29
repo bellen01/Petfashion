@@ -12,7 +12,7 @@
     flex-direction: column;
     background-color: var(--sand);
     border: 5px solid var(--navy);
-    width: 80%;
+    width: 75%;
     justify-self: center;
     padding: 20px;
 
@@ -46,7 +46,7 @@ p{
     justify-self: center;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 60%;
     height: 530px;
     margin-bottom: 45px;
     border: 5px solid var(--navy);
@@ -127,4 +127,5 @@ input[type="submit"]
     .form-r {
         margin: 0 20px 30px 20px;
     }
+    
     }
