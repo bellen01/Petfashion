@@ -44,7 +44,7 @@
     /* justify-self: center; */
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     height: 530px;
     margin: auto;
     border: 5px solid var(--navy);
@@ -54,6 +54,7 @@
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 #fname,
 .input-text,
@@ -73,6 +74,9 @@ input[type="submit"]
 }
 textarea{
     width: 90%;
+    font-family: montserrat;
+    font-size: 16px;
+    padding: 10px;
 }
 
 .rate {
@@ -125,12 +129,11 @@ textarea{
     #container-r{
         grid-template-columns: 1fr;
     }
-    .form-r {
-        margin: 0 20px 30px 20px;
-    }
     .form-r p{
-        font-size: 20px;
-        margin-right: 20px;
+        font-size: 25px;
+    }
+    .form-r{
+        width: 75%;
     }
     
     }
