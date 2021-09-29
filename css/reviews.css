@@ -37,11 +37,10 @@
     
 }
 .container2{
-    /* display: grid; */
     background-color: var(--beige);
 }
 .form-r{
-    /* justify-self: center; */
+    
     display: flex;
     flex-direction: column;
     width: 50%;
