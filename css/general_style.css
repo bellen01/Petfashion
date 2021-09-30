@@ -142,5 +142,9 @@ address p {
         margin: 0;
 
     }
+
+    footer address p {
+        display: none;
+    }
 }
 
