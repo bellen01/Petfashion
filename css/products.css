@@ -7,18 +7,18 @@ main {
     padding: 0 5%;
 }
 
-#first-section {
-    /* width: 100%; */
-    /* padding: 0 5%; */
-    /* margin: 0 auto; */
-    /* display: grid;
+/* #first-section {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "textarea"
     "topmenu";
-    gap: 10px; */
-}
+    gap: 10px;
+} */
 
 .page-intro {
     /* grid-area: textarea; */
@@ -47,15 +47,15 @@ main {
 .filter-button {
     display: none;
     text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid var(--sand);
+    /* padding: 20px 0;
+    border-top: 1px solid var(--sand); */
 }
 
 .categories-button {
     display: none;
     text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid var(--sand);
+    /* padding: 20px 0;
+    border-top: 1px solid var(--sand); */
 }
 
 .filter-button button {
@@ -68,6 +68,15 @@ main {
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px 30px;
+}
+
+.filter-buttons {
+    grid-area: topmenu;
+    display: none;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 20px 0;
+    border-top: 1px solid var(--sand);
 }
 
 #product-grid-container {
@@ -194,13 +203,13 @@ main {
     font-size: 13px;
 }
 
-/* .categories-button button {
+.categories-button button {
     font-family: montserrat;
     text-transform: uppercase;
     border: 1px solid var(--sand);
     border-radius: 5px;
     font-size: 13px;
-} */
+}
 
 .add-to-cart i,
 .filter-button i {
@@ -293,15 +302,18 @@ button:active {
         gap: 0px;
     }
 
-    .filter-button {
-        display: block;
-        grid-area: topmenu;
+    .filter-buttons {
+        display: flex;
+        /* grid-area: topmenu; */
     }
 
-    /* .categories-button {
-        display: block;
-        grid-area: topmenu;
-    } */
+    .filter-button {
+        display: inline-block;
+    }
+
+    .categories-button {
+        display: inline-block;
+    }
 
     .loadmore-button {
         display: inline-block;
