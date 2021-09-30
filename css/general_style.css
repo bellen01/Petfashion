@@ -137,6 +137,7 @@ address p {
     display: grid;
     row-gap: 5px;
 }
+
 @media screen and (max-width: 767px){
     nav a{
         margin: 0;
