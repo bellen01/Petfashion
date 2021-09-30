@@ -1,7 +1,15 @@
+/* :root {
+    --font: 'Montserrat', sans-serif;
+} */
 
-#first-section {
+main {
     width: 100%;
     padding: 0 5%;
+}
+
+#first-section {
+    /* width: 100%; */
+    /* padding: 0 5%; */
     /* margin: 0 auto; */
     /* display: grid;
     grid-template-columns: 1fr;
@@ -50,8 +58,8 @@
 }
 
 #product-grid-container {
-    width: 100%;
-    padding: 0 5%;
+    /* width: 100%; */
+    /* padding: 0 5%; */
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto 3fr;
