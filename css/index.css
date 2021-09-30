@@ -14,13 +14,10 @@
     #container3 {
         display: flex;
         flex-flow: row nowrap;
-        
-        column-gap: 100px;
-       
-        padding: 30px;
 
-        padding-left: 75px;
-        
+        justify-content: space-evenly;
+    
+        padding: 30px;  
                     
     }
 
