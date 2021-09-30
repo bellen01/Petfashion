@@ -2,18 +2,18 @@
 #first-section {
     width: 100%;
     padding: 0 5%;
-    margin: 0 auto;
-    display: grid;
+    /* margin: 0 auto; */
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "textarea"
     "topmenu";
-    gap: 10px;
+    gap: 10px; */
 }
 
 .page-intro {
-    grid-area: textarea;
+    /* grid-area: textarea; */
     text-align: center;
     line-height: 1.5;
     margin: 0 20px 40px 20px;
@@ -25,9 +25,10 @@
 }
 
 .product-menu {
-    grid-area: topmenu;
+    /* grid-area: topmenu; */
     padding: 20px 0;
     border-top: 1px solid var(--sand);
+    margin-top: 30px;
 }
 
 .product-menu a:hover {
@@ -45,15 +46,6 @@
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px 30px;
-    font-family: montserrat;
-    text-transform: uppercase;
-    border: 1px solid var(--sand);
-    border-radius: 5px;
-    font-size: 13px;
-}
-
-.filter-button i {
-    margin: 0;
 }
 
 #product-grid-container {
@@ -166,6 +158,10 @@
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px;
+}
+
+.add-to-cart button,
+.filter-button button {
     font-family: montserrat;
     text-transform: uppercase;
     border: 1px solid var(--sand);
@@ -173,31 +169,24 @@
     font-size: 13px;
 }
 
-/* .add-to-cart button:hover {
-    cursor: pointer;
-} */
-
-
-
-/* .add-to-cart button:active {
-    border: 1px solid var(--sand);
-    background-color: white; */
-    /* background-color: var(--navy);
-    color: var(--sand); */
-/* } */
-
-.add-to-cart i {
+.add-to-cart i,
+.filter-button i {
     margin: 0;
     /* padding-left: 5px; */
     font-size: 13px;
 }
 
-.heart {
+.heart,
+.add-to-cart-mobile {
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px 10px 10px 5px;
     font-size: 13px;
     border-radius: 5px;
+}
+
+.add-to-cart-mobile {
+    display: none;
 }
 
 #pagination {
@@ -272,12 +261,24 @@ button:active {
     }
 
     .filter-button {
-        display: inline-block;
-        grid-area: topmenu;
+        display: block;
+        /* grid-area: topmenu; */
     }
 
     .loadmore-button {
         display: inline-block;
         grid-area: pagination;
+    }
+
+    .add-to-cart button {
+        padding: 5px;
+    }
+
+    .add-to-cart2 {
+        display: none;
+    }
+
+    .add-to-cart-mobile {
+        display: inline-block;
     }
 }
