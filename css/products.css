@@ -51,7 +51,20 @@ main {
     border-top: 1px solid var(--sand);
 }
 
+.categories-button {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--sand);
+}
+
 .filter-button button {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 30px;
+}
+
+.categories-button button {
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px 30px;
@@ -181,6 +194,14 @@ main {
     font-size: 13px;
 }
 
+/* .categories-button button {
+    font-family: montserrat;
+    text-transform: uppercase;
+    border: 1px solid var(--sand);
+    border-radius: 5px;
+    font-size: 13px;
+} */
+
 .add-to-cart i,
 .filter-button i {
     margin: 0;
@@ -274,8 +295,13 @@ button:active {
 
     .filter-button {
         display: block;
-        /* grid-area: topmenu; */
+        grid-area: topmenu;
     }
+
+    /* .categories-button {
+        display: block;
+        grid-area: topmenu;
+    } */
 
     .loadmore-button {
         display: inline-block;
