@@ -25,14 +25,15 @@
 }
 
 .product-menu {
-    /* grid-area: topmenu; */
-    padding: 20px 0;
+    grid-area: topmenu;
+    padding: 30px 0 20px 0;
     border-top: 1px solid var(--sand);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .product-menu a:hover {
     border-bottom: none;
+    font-weight: 400;
 }
 
 .filter-button {
@@ -56,6 +57,7 @@
     grid-template-columns: auto 3fr;
     grid-template-rows: auto;
     grid-template-areas:
+    "topmenu topmenu"
     "sidebar products"
     "pagination pagination";
     gap: 10px;
@@ -83,7 +85,7 @@
     font-size: 13px;
 }
 
-#showproducts {
+#show-products {
     padding-bottom: 10px;
     margin-bottom: 15px;
     border-bottom: 1px solid var(--sand);
@@ -143,6 +145,8 @@
     color: var(--navy);
     font-weight: 500;
     margin-top: 5px;
+    font-family: montserrat;
+    font-size: 13px;
 }
 
 .price {
