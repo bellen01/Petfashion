@@ -21,34 +21,32 @@
     width: 100%;
     align-self: center;
 }
-p{
-    margin-left: 22px;
+.name{
+    margin-left: 17px;
     margin-top: 20px;  
 }
 
 .stars{
     width: 100px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 10px;
 }
 .text{
-    margin-top:10px;
-    margin-right: 22px;
-    padding-bottom: 20px;
+    margin:10px 22px 20px 15px;
     line-height: 1.6;
     
 }
 .container2{
-    display: grid;
+    /* display: grid; */
     background-color: var(--beige);
 }
 .form-r{
-    justify-self: center;
+    /* justify-self: center; */
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     height: 530px;
-    margin-bottom: 45px;
+    margin: auto;
     border: 5px solid var(--navy);
     background-color: var(--sand);
 }
@@ -56,6 +54,7 @@ p{
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 #fname,
 .input-text,
@@ -72,6 +71,12 @@ input[type="submit"]
     width: 150px;
     height: 40px;
 
+}
+textarea{
+    width: 90%;
+    font-family: montserrat;
+    font-size: 16px;
+    padding: 10px;
 }
 
 .rate {
@@ -124,8 +129,11 @@ input[type="submit"]
     #container-r{
         grid-template-columns: 1fr;
     }
-    .form-r {
-        margin: 0 20px 30px 20px;
+    .form-r p{
+        font-size: 25px;
+    }
+    .form-r{
+        width: 75%;
     }
     
     }
