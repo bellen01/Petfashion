@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--sand);
-    border: 5px solid var(--navy);
+    border: 3px solid var(--navy);
     width: 75%;
     justify-self: center;
     padding: 20px;
@@ -36,17 +36,17 @@
     line-height: 1.6;
     
 }
-.container2{
+.container-r2{
     background-color: var(--beige);
+    padding-bottom: 30px;
 }
 .form-r{
-    
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 530px;
     margin: auto;
-    border: 5px solid var(--navy);
+    border: 3px solid var(--navy);
     background-color: var(--sand);
 }
 .form-r p{
@@ -66,20 +66,20 @@ input[type="submit"]{
 input[type="text"],
 input[type="submit"]
 {
-    font-family: montserrat;
+    padding: 10px;
+    font-family: montserrat, sans-serif;
     width: 150px;
     height: 40px;
 
 }
 textarea{
     width: 90%;
-    font-family: montserrat;
+    font-family: montserrat, sans-serif;;
     font-size: 16px;
     padding: 10px;
 }
 
 .rate {
-    display: flex;
     flex-direction: row-reverse;
     align-self: center;
     height: 46px;
@@ -121,6 +121,9 @@ textarea{
 @media screen and (max-width: 960px) and (min-width: 768px){
 #container-r{
     grid-template-columns: repeat(2, 1fr);
+}
+.form-r{
+    width: 70%;
 }
 
 }
