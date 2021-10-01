@@ -9,52 +9,18 @@ main {
     padding: 0 5%;
 }
 
-.page-intro {
+#page-intro {
     text-align: center;
     line-height: 1.5;
     margin: 0 20px 40px 20px;
     font-size: 16px;
 }
 
-.page-intro h1 {
+#page-intro h1 {
     color: var(--navy);
-}
-
-.product-menu {
-    grid-area: topmenu;
-    padding: 30px 0 20px 0;
-    border-top: 1px solid var(--sand);
-    margin-top: 20px;
-}
-
-.product-menu a:hover {
-    border-bottom: none;
-    font-weight: 400;
-}
-
-.filter-button,
-.categories-button {
-    text-align: center;
-}
-
-.filter-button button,
-.categories-button button {
-    background-color: var(--sand);
-    color: var(--navy);
-    padding: 10px 30px;
-}
-
-.filter-buttons-container {
-    grid-area: topmenu;
-    display: none;
-    justify-content: center;
-    column-gap: 10px;
-    padding: 20px 0;
-    border-top: 1px solid var(--sand);
 }
 
 #product-grid-container {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: auto 3fr;
     grid-template-rows: auto;
@@ -65,23 +31,56 @@ main {
     gap: 10px;
 }
 
-.product-filter {
+#product-menu {
+    grid-area: topmenu;
+    padding: 30px 0 20px 0;
+    border-top: 1px solid var(--sand);
+    margin-top: 20px;
+}
+
+#product-menu a:hover {
+    border-bottom: none;
+    font-weight: 400;
+}
+
+#filter-buttons-container {
+    grid-area: topmenu;
+    display: none;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 20px 0;
+    border-top: 1px solid var(--sand);
+}
+
+.categories-button,
+.filter-button {
+    text-align: center;
+}
+
+.categories-button button,
+.filter-button button {
+    background-color: var(--sand);
+    color: var(--navy);
+    padding: 10px 30px;
+}
+
+#product-filter {
     grid-area: sidebar;
     padding-right: 25px;
     font-size: var(--main-font-size);
+}
+
+#product-filter h2 {
+    text-transform: var(--main-text-transform);
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    font-weight: 400;
 }
 
 #show-products {
     padding-bottom: 10px;
     margin-bottom: 15px;
     border-bottom: 1px solid var(--sand);
-}
-
-.product-filter h2 {
-    text-transform: var(--main-text-transform);
-    font-family: var(--main-font);
-    font-size: var(--main-font-size);
-    font-weight: 400;
 }
 
 .product-filter-choices {
@@ -103,7 +102,7 @@ main {
     text-transform: var(--main-text-transform);
 }
 
-.product-container {
+#product-container {
     width: 100%;
     grid-area: products;
     display: flex;
@@ -139,17 +138,17 @@ main {
     margin: 5px 0;
 }
 
-.add-to-cart {
+.add-to-cart-container {
     text-align: right;
 }
 
-.add-to-cart button {
+.add-to-cart-container button {
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px;
 }
 
-.add-to-cart button,
+.add-to-cart-container button,
 .filter-button button,
 .categories-button button {
     font-family: var(--main-font);
@@ -159,13 +158,13 @@ main {
     font-size: var(--main-font-size);
 }
 
-.add-to-cart i,
+.add-to-cart-container i,
 .filter-button i {
     margin: 0;
     font-size: var(--main-font-size);
 }
 
-.heart,
+.favorite,
 .add-to-cart-mobile {
     background-color: var(--sand);
     color: var(--navy);
@@ -188,13 +187,14 @@ main {
 
 #pagination a {
     padding: 20px;
+    border-bottom: 1px solid transparent;
 }
 
 #pagination a:hover {
     border-bottom: 1px solid black;
 }
 
-.loadmore-button {
+.show-more-button {
     display: none;
     grid-area: pagination;
     text-align: center;
@@ -202,7 +202,7 @@ main {
     padding: 20px;
 }
 
-.loadmore-button button {
+.show-more-button button {
     background-color: var(--navy);
     color: var(--sand);
     padding: 10px 30px;
@@ -223,6 +223,7 @@ button:active {
     color: var(--navy);
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 960px) {
     .product {
         min-width: 45%;
@@ -234,10 +235,10 @@ button:active {
         min-width: 45%;
     }
 
-    .product-filter,
-    .product-menu,
+    #product-menu,
+    #product-filter,
     #pagination,
-    .add-to-cart2 {
+    .add-to-cart-desktop {
         display: none;
     }
 
@@ -245,18 +246,16 @@ button:active {
         gap: 0px;
     }
 
-    .filter-buttons-container {
+    #filter-buttons-container {
         display: flex;
     }
 
-    /* .filter-button,
-    .categories-button, */
     .add-to-cart-mobile,
-    .loadmore-button {
+    .show-more-button {
         display: inline-block;
     }
 
-    .add-to-cart button {
+    .add-to-cart-container button {
         padding: 5px;
     }
 }
