@@ -1,6 +1,8 @@
-/* :root {
-    --font: 'Montserrat', sans-serif;
-} */
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --main-font-size: 13px;
+    --main-text-transform: uppercase;
+}
 
 main {
     width: 100%;
@@ -66,7 +68,7 @@ main {
 .product-filter {
     grid-area: sidebar;
     padding-right: 25px;
-    font-size: 13px;
+    font-size: var(--main-font-size);
 }
 
 #show-products {
@@ -76,9 +78,9 @@ main {
 }
 
 .product-filter h2 {
-    text-transform: uppercase;
-    font-family: montserrat;
-    font-size: 13px;
+    text-transform: var(--main-text-transform);
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
     font-weight: 400;
 }
 
@@ -98,7 +100,7 @@ main {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--sand);
     margin-bottom: 15px;
-    text-transform: uppercase;
+    text-transform: var(--main-text-transform);
 }
 
 .product-container {
@@ -121,15 +123,15 @@ main {
 }
 
 .product div {
-    font-size: 13px;
+    font-size: var(--main-font-size);
 }
 
 .brand-text {
     color: var(--navy);
     font-weight: 500;
     margin-top: 5px;
-    font-family: montserrat;
-    font-size: 13px;
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
 }
 
 .price {
@@ -150,17 +152,17 @@ main {
 .add-to-cart button,
 .filter-button button,
 .categories-button button {
-    font-family: montserrat;
-    text-transform: uppercase;
+    font-family: var(--main-font);
+    text-transform: var(--main-text-transform);
     border: 1px solid var(--sand);
     border-radius: 5px;
-    font-size: 13px;
+    font-size: var(--main-font-size);
 }
 
 .add-to-cart i,
 .filter-button i {
     margin: 0;
-    font-size: 13px;
+    font-size: var(--main-font-size);
 }
 
 .heart,
@@ -168,7 +170,7 @@ main {
     background-color: var(--sand);
     color: var(--navy);
     padding: 10px 10px 10px 5px;
-    font-size: 13px;
+    font-size: var(--main-font-size);
     border-radius: 5px;
 }
 
@@ -204,11 +206,11 @@ main {
     background-color: var(--navy);
     color: var(--sand);
     padding: 10px 30px;
-    font-family: montserrat;
-    text-transform: uppercase;
+    font-family: var(--main-font);
+    text-transform: var(--main-text-transform);
     border: 1px solid var(--navy);
     border-radius: 5px;
-    font-size: 13px;
+    font-size: var(--main-font-size);
 }
 
 button:hover {
@@ -247,8 +249,8 @@ button:active {
         display: flex;
     }
 
-    .filter-button,
-    .categories-button,
+    /* .filter-button,
+    .categories-button, */
     .add-to-cart-mobile,
     .loadmore-button {
         display: inline-block;
