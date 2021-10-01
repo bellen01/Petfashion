@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our products</title>
+    <title>Shop our products</title>
     <link rel="stylesheet" href="css/general_style.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,42 +35,47 @@
 
             </nav>
         </header>
-        <main>
-            <!-- <main id="productpage-main-grid-container"> -->
-            <div id="first-section">
-                <section class="page-intro">
-                    <h1>Our products</h1>
-                    <p>
-                        We know that only the best is good enough for your furry friend, or as we in Sweden would say,
-                        for
-                        your Pälskling <i class="bi bi-suit-heart-fill"></i>
-                    </p>
-                    <p>
-                        All our products has therefore been carefully selected to bring you and your best friend the
-                        most
-                        luxurios yet comfortable experience there is.
-                    </p>
-                    <p>
-                        We would even go so far as to promise that you won't find anything better anywhere else.
-                    </p>
-                </section>
 
-                <nav class="product-menu">
+
+        <main>
+            <section id="page-intro">
+                <h1>Our products</h1>
+                <p>
+                    We know that only the best is good enough for your furry friend, or as we in Sweden would
+                    say,
+                    for
+                    your Pälskling <i class="bi bi-suit-heart-fill"></i>
+                </p>
+                <p>
+                    All our products has therefore been carefully selected to bring you and your best friend the
+                    most
+                    luxurios yet comfortable experience there is.
+                </p>
+                <p>
+                    We would even go so far as to promise that you won't find anything better anywhere else.
+                </p>
+            </section>
+
+
+            <div id="product-grid-container">
+                <nav id="product-menu">
                     <a href="">All products</a>
+                    <a href="">Bags</a>
                     <a href="">Collars</a>
                     <a href="">Jackets</a>
                     <a href="">Sunglasses</a>
-                    <a href="">Bags</a>
                 </nav>
-
-                <div class="filter-button">
-                    <button>Filter <i class="bi bi-filter-left"></i></button>
+                <div id="filter-buttons-container">
+                    <div class="categories-button">
+                        <button>Products</button>
+                    </div>
+                    <div class="filter-button">
+                        <button>Filter <i class="bi bi-filter-left"></i></button>
+                    </div>
                 </div>
-            </div>
 
-            <div id="product-grid-container">
-                <section class="product-filter">
-                    <div id="showproducts">Show products for:</div>
+                <div id="product-filter">
+                    <h2 id="show-products">Show products for:</h2>
                     <aside class="product-filter-choices">
                         <div>
                             <input type="checkbox" name="chihuahua" id="chihuahua" value="chihuahua">
@@ -112,7 +117,7 @@
                             </div>
                         </div>
 
-                        <div id="filter-brand">Brand:</div>
+                        <h2 id="filter-brand">Brand:</h2>
                         <div>
                             <input type="checkbox" name="adidas" id="adidas" value="adidas">
                             <label for="adidas">Adidas</label>
@@ -142,78 +147,84 @@
                             <label for="prada">Prada</label>
                         </div>
                     </aside>
-                </section>
+                </div>
 
-                <section class="product-container">
+                <section id="product-container">
                     <article class="product">
-                        <img src="img/product-img/jacket-alexandra-novitskaya-O6EhbndNhpA-unsplash.jpg" alt="">
-                        <div class="brand-text">Gucci</div>
+                        <img src="img/product-img/jacket-alexandra-novitskaya-O6EhbndNhpA-unsplash.jpg"
+                            alt="Dog in green jacket">
+                        <h2 class="brand-text">Gucci</h2>
                         <div>Green jacket</div>
                         <div class="price">1 990 kr</div>
-                        <div class="add-to-cart">
-                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
-                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
-                            <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                        <div class="add-to-cart-container">
+                            <button class="favorite"><i class="bi bi-suit-heart"></i></button>
+                            <button class="add-to-cart-desktop">Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                            <button class="add-to-cart-mobile"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
-                        <img src="img/product-img/jacket-charles-deluvio-lJJlaUWYrPE-unsplash.jpg" alt="">
-                        <div class="brand-text">Dior</div>
+                        <img src="img/product-img/jacket-charles-deluvio-lJJlaUWYrPE-unsplash.jpg"
+                            alt="Dog in yellow raincoat">
+                        <h2 class="brand-text">Dior</h2>
                         <div>Yellow raincoat</div>
                         <div class="price">990 kr</div>
-                        <div class="add-to-cart">
-                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
-                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
-                            <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                        <div class="add-to-cart-container">
+                            <button class="favorite"><i class="bi bi-suit-heart"></i></button>
+                            <button class="add-to-cart-desktop">Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                            <button class="add-to-cart-mobile"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
-                        <img src="img/product-img/jacket-karsten-winegeart-sytld_poGLc-unsplash.jpg" alt="">
-                        <div class="brand-text">Adidas</div>
+                        <img src="img/product-img/jacket-karsten-winegeart-sytld_poGLc-unsplash.jpg"
+                            alt="Dog in black and yellow sweatshirt and gold necklace">
+                        <h2 class="brand-text">Adidas</h2>
                         <div>Black sweatshirt</div>
                         <div class="price">1 299 kr</div>
-                        <div class="add-to-cart">
-                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
-                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
-                            <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                        <div class="add-to-cart-container">
+                            <button class="favorite"><i class="bi bi-suit-heart"></i></button>
+                            <button class="add-to-cart-desktop">Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                            <button class="add-to-cart-mobile"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
-                        <img src="img/product-img/jacket-karsten-winegeart-rs_x0VjRY0U-unsplash.jpg" alt="">
-                        <div class="brand-text">Prada</div>
+                        <img src="img/product-img/jacket-karsten-winegeart-rs_x0VjRY0U-unsplash.jpg"
+                            alt="Happy dog in pink tiger-stripped jacket and gold necklace">
+                        <h2 class="brand-text">Prada</h2>
                         <div>Gold necklace</div>
                         <div class="price">2 500 kr</div>
-                        <div class="add-to-cart">
-                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
-                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
-                            <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                        <div class="add-to-cart-container">
+                            <button class="favorite"><i class="bi bi-suit-heart"></i></button>
+                            <button class="add-to-cart-desktop">Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                            <button class="add-to-cart-mobile"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
-                        <img src="img/product-img/jacket-karsten-winegeart-Qb7D1xw28Co-unsplash.jpg" alt="">
-                        <div class="brand-text">Balenciaga</div>
+                        <img src="img/product-img/jacket-karsten-winegeart-Qb7D1xw28Co-unsplash.jpg"
+                            alt="Dog in blue and yellow pyjamas with bananas on it">
+                        <h2 class="brand-text">Balenciaga</h2>
                         <div>Banana pyjamas</div>
                         <div class="price">1 000 kr</div>
-                        <div class="add-to-cart">
-                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
-                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
-                            <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                        <div class="add-to-cart-container">
+                            <button class="favorite"><i class="bi bi-suit-heart"></i></button>
+                            <button class="add-to-cart-desktop">Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                            <button class="add-to-cart-mobile"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
 
                     <article class="product">
-                        <img src="img/product-img/glasses-charles-deluvio-pOUA8Xay514-unsplash.jpg" alt="">
-                        <div class="brand-text">Louis Vuitton</div>
+                        <img src="img/product-img/glasses-charles-deluvio-pOUA8Xay514-unsplash.jpg"
+                            alt="Dog in big glasses and grey sweater">
+                        <h2 class="brand-text">Louis Vuitton</h2>
                         <div>Trendy glasses</div>
                         <div class="price">1 990 kr</div>
-                        <div class="add-to-cart">
-                            <button class="heart"><i class="bi bi-suit-heart"></i></button>
-                            <!-- <a href="" class="heart"><i class="bi bi-suit-heart"></i></a> -->
-                            <button>Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                        <div class="add-to-cart-container">
+                            <button class="favorite"><i class="bi bi-suit-heart"></i></button>
+                            <button class="add-to-cart-desktop">Add to cart <i class="bi bi-bag-plus-fill"></i></button>
+                            <button class="add-to-cart-mobile"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
                     </article>
                 </section>
@@ -225,11 +236,14 @@
                     <a href=""><i class="bi bi-arrow-right-short"></i></a>
                 </div>
 
-                <div class="loadmore-button">
-                    <button>Load more products</button>
+                <div class="show-more-button">
+                    <button>Show more products</button>
                 </div>
             </div>
         </main>
+
+
+
         <footer>
             <address>
                 <a href=""><i class="bi bi-phone"></i>
