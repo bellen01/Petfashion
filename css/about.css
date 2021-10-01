@@ -1,8 +1,12 @@
+
+/* -------------- GENERAL SETTINGS -------------- */
+
+
 :root {
     --dark-beige: rgb(128, 122, 107);
     --fyrkant-size: 120px;
-
-    --arrow: rgb(94, 94, 126);
+    --light-blue: rgb(94, 94, 126);
+    --hover-blue: rgb(108, 108, 196);
     --arrow-width: 3px;
 }
 
@@ -17,6 +21,8 @@ img {
     height: 100%;
 }
 
+
+/* -------------- HEADLINES -------------- */
 
 
 h1 {
@@ -70,7 +76,7 @@ h5 {
 }
 
 
-/* -------------- MAIN - START -------------- */
+/* -------------- MAIN -------------- */
 
 
 #container-main {
@@ -97,7 +103,7 @@ article {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15vh;
+    margin-bottom: 120px;
     width: 100%;
     background-color: rgb(13, 13, 41);
 }
@@ -119,13 +125,17 @@ article {
     position: absolute;
     top: 37px;
     right: 50px;
-    color: var(--arrow);
+    color: var(--light-blue);
     text-transform: uppercase;
     font-family: 'open sans';
     font-size: 11.5px;
     font-weight: 600;
     letter-spacing: 3px;
     text-align: right;
+}
+
+.shop-products-about:hover {
+    color: var(--hover-blue);
 }
 
 .share-about {
@@ -139,6 +149,10 @@ article {
 .share-about p {
     color: rgb(94, 94, 126);
     font-size: 14.5px;
+}
+
+.share-about .bi:hover {
+    color: var(--hover-blue);
 }
 
 .bi-share {
@@ -169,7 +183,12 @@ article {
 .arrow-down {
     position: relative;
     flex-grow: 1;
-    border-right: var(--arrow-width) solid var(--arrow);
+    border-right: var(--arrow-width) solid var(--light-blue);
+}
+
+.arrow-up:hover,
+.arrow-down:hover {
+    border-right: var(--arrow-width) solid var(--hover-blue);
 }
 
 .arrow-up-sm-line,
@@ -178,7 +197,12 @@ article {
     left: -14px;
     width: 20px;
     height: 2px;
-    border-top: var(--arrow-width) solid var(--arrow);
+    border-top: var(--arrow-width) solid var(--light-blue);
+}
+
+.arrow-up:hover .arrow-up-sm-line,
+.arrow-down:hover .arrow-down-sm-line {
+    border-top: var(--arrow-width) solid var(--hover-blue);
 }
 
 .arrow-up-sm-line {
@@ -229,11 +253,15 @@ article {
     cursor: pointer;
 }
 
+.join-our-team:hover {
+    background-color: rgb(184, 159, 130);
+}
 
-/* -------------- POPUP WORK - START -------------- */
+
+/* -------------- POPUP JOIN OUR TEAM - START -------------- */
 
 
-#work-contact {
+#popup-join-team {
     display: none;
     position: fixed;
     align-items: stretch;
@@ -248,6 +276,13 @@ article {
 
 .close-popup {
     display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 19;
+    cursor: pointer;
 }
 
 .bi-x {
@@ -259,7 +294,7 @@ article {
     color: rgb(199, 199, 199);
 }
 
-#work-contact-info {
+#contact-info {
     display: grid;
     flex-grow: 1;
     background-color: var(--sand);
@@ -267,46 +302,40 @@ article {
     align-content: end;
 }
 
-#work-contact-info > section {
+#contact-info > section {
     display: grid;
     row-gap: 8px;
 
 }
 
-#work-contact-info .bi {
+#contact-info .bi {
     color: var(--dark-beige);
 }
 
-#work-contact-info p {
+#contact-info p {
     font-size: 12px;
 }
 
-#work-contact-text {
+#join-team-text {
     font-size: 14px;
     width: 72%;
     padding: 67px 80px 80px 68px;
 }
 
-#work-contact-text p {
+#join-team-text p {
     color: rgb(90, 90, 90);
 }
 
-.popup-work-open #work-contact {
+.popup-work-open #popup-join-team {
     display: flex;
 }
 
 .popup-work-open .close-popup {
     display: block;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 19;
-    cursor: pointer;
 }
 
 
-.popup-work-closed #work-contact,
+.popup-work-closed #popup-join-team,
 .popup-work-closed .close-popup {
     display: none;
 }
@@ -395,7 +424,7 @@ article {
     .article-main-content {
         grid-template-columns: 5px minmax(auto, 100%);
         padding: 78px 0 155px 0;
-        border-top: 1px solid var(--arrow);
+        border-top: 1px solid var(--light-blue);
     }
 
     .small-img {
