@@ -3,7 +3,6 @@
     --dark: rgb(13, 13, 41);
     --beige: rgb(201, 176, 147);
     --sand: #f2efea;
-
 }
 
 * {
@@ -13,16 +12,9 @@
 }
 
 body {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
-
-/* #container {
-    display: grid;
-    grid-template-rows: minmax(120px, auto) auto minmax(120px, auto);
-
-
-} */
 
 header {
     min-height: 120px;
@@ -35,11 +27,10 @@ header {
  right: 10px;
  top: 10px;  
  font-size: 20px;
-
 }
 
 .bi {
-    margin-right: 10px; /* Ta bort margin-righ härifrån? / Anna */
+    margin-right: 10px;
 }
 
 
@@ -53,7 +44,7 @@ header {
 }
 
 h1 {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
@@ -71,7 +62,6 @@ nav{
    text-align:center; 
    font-size: 13px;
    margin-top: 10px;
-   
 }
 
 nav a {
@@ -104,7 +94,6 @@ address {
     flex-direction: column;
     font-style: normal;
     row-gap: 5px;
-    
 }
 
 address p {
@@ -119,18 +108,16 @@ address p {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    font-family: Marcellus SC;
+    font-family: 'Marcellus SC', serif;
     font-size: 30px;
     background-color: rgb(22, 22, 65);
     color: white;
-    
 }
 
 #follow {
     font-size: 15px;
     margin-right: 10px;
     text-align: center;
-
 }
 
 #social {
@@ -140,7 +127,6 @@ address p {
 @media screen and (max-width: 767px){
     nav a{
         margin: 0;
-
     }
 
     footer address p {
